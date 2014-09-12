@@ -1,0 +1,76 @@
+<%= render 'head' %>
+
+<body class="api">
+  <%= render 'header' %>
+
+  <div id="wrapper">
+    <div class="content">
+	<%= yield %>
+
+<%if @item[:wheel] %>
+    <% @item[:wheel].each_with_index do | k | %>  
+	<%= k[:name] %>
+	<div class='wrapword'><pre><code><%= k[:description] %></code></pre></div>
+	
+<% end %>
+
+ <div class='post'>
+    <h1><%= item[:title] %></h1>
+    <article>
+      <%= yield %>
+    </article>
+  </div>
+
+<% render_child('search').each_with_index do | k | %>
+        <h2><%= k[:title] %></h2>
+        <%= k.compiled_content %>
+<% end %>
+
+<div class="topic">
+</div>
+
+<% end %>
+
+    </div>
+
+    <div id="js-sidebar" class="sidebar-shell">
+      <div class="sidebar-module">
+	<ul>
+	  <li><h3><a href="/guides/overview">Overview</a></h3></li>
+	  <li><h3><a href="/guides/glossary/">Glossary</a></h3></li>
+	  <li><h3><a href="#">API</a></h3></li>
+	  <li><ul>
+	  	<li><h3><a href="/guides/api/">Getting Started</a></h3></li>
+	  	<li><h3><a href="/guides/api-auth/">Authenticate</a></h3></li>
+	  	<li><h3><a href="/guides/api-get/">Get a PID</a></h3></li>
+	  	<li><h3><a href="/guides/api-list/">List all PID</a></h3></li>
+	  	<li><h3><a href="/guides/api-search/">Search</a></h3></li>
+	  	<li><h3><a href="/guides/api-create/">Create a PID</a></h3></li>
+	  	<li><h3><a href="/guides/api-update/">Update a PID</a></h3></li>
+	  	<li><h3><a href="/guides/api-delete/">Delete a PID</a></h3></li>
+	  	<li><h3><a href="/guides/api-partial/">Part Identifiers</a></h3></li>
+	  </ul></li>
+	</ul>
+      </div>
+   <div class="sidebar-module notice">
+	<p>
+	  <strong>Service Url:</strong>
+	  <center>
+	    https://epic.grnet.gr/api/v2/handles/
+	  </center>
+	</p>
+  </div>
+  
+  <div class="sidebar-module notice">
+	<p>
+	  <strong>Contact Us:</strong>
+	  <center>
+	   <a href="https://docs.google.com/forms/d/1IQL8dtwUW_MrV9ApZJmnjzZRaAAp18JtGTa2wMfcxiM/viewform" target='blank'>Contact Us</a>
+	  </center>
+	</p>
+  </div>
+  </div><!-- #wrapper -->
+  
+  <%= render 'footer' %>
+</body>
+</html>

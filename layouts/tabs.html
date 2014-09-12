@@ -1,0 +1,76 @@
+<%= render 'head' %>
+<body class="api">
+  <%= render 'header' %>
+
+  <div id="wrapper">
+    <div class="content">
+      <%= yield %>
+
+<% if @item[:slug] %>
+<ul class="nav nav-tabs">
+	<% render_child(@item[:slug]).each_with_index do | k | %>
+	  <% if k[:order]==1 %>
+		  <li class="active"><a href="#tab-<%= k[:order] %>" data-toggle="tab"><%= k[:title] %></a></li>
+	  <% else  %>
+		  <li><a href="#tab-<%= k[:order] %>" data-toggle="tab"><%= k[:title] %></a></li>
+	<% end %>
+	<% end %>
+</ul>
+<div class="tab-content">
+	<% render_child(@item[:slug]).each_with_index do | k | %>
+	 <% if k[:order]==1 %>
+	 <div class="tab-pane active" id="tab-<%= k[:order] %>">
+	  <% else  %>
+	 <div class="tab-pane" id="tab-<%= k[:order] %>">
+	<% end %>
+		<%= k.compiled_content %>
+	 </div>
+	<% end %>
+</div>
+	<% if @item[:result] %>
+		<% render_child(@item[:result]).each_with_index do | k | %>
+			<%= k.compiled_content %>
+		<% end %>
+	<% end %>
+
+<% end %> <!--end item[:slug]-->
+ </div>
+
+
+    <div id="js-sidebar" class="sidebar-shell">
+      <div class="sidebar-module">
+        <ul>
+          <li><h3><a href="/guides/overview">Overview</a></h3></li>
+          <li><h3><a href="/guides/glossary/">Glossary</a></h3></li>
+          <li><h3><a href="#">API</a></h3></li>
+          <li><ul>
+                <li><h3><a href="/guides/api/">Getting Started</a></h3></li>
+                <li><h3><a href="/guides/api-auth/">Authenticate</a></h3></li>
+                <li><h3><a href="/guides/api-generation/">PID Generation</a></h3></li>
+                <li><h3><a href="/guides/api-get/">Get a PID</a></h3></li>
+                <li><h3><a href="/guides/api-list/">List all PID</a></h3></li>
+                <li><h3><a href="/guides/api-search/">Search</a></h3></li>
+                <li><h3><a href="/guides/api-create/">Create a PID</a></h3></li>
+                <li><h3><a href="/guides/api-update/">Update a PID</a></h3></li>
+                <li><h3><a href="/guides/api-delete/">Delete a PID</a></h3></li>
+                <li><h3><a href="/guides/api-partial/">Part Identifiers</a></h3></li>
+          </ul></li>
+        </ul> 
+      </div>
+      <div class="sidebar-module notice padding10">
+          <strong>Service Url:</strong>
+          <span class="txtcenter"> https://epic.grnet.gr/api/v2/handles/ </span>
+      </div><!--sidebar-module-->
+      
+      <div class="sidebar-module padding10">
+          <strong>Contact Us:</strong>
+           <a href="https://docs.google.com/forms/d/1IQL8dtwUW_MrV9ApZJmnjzZRaAAp18JtGTa2wMfcxiM/viewform" target='blank'>Contact Us</a>
+      </div><!--sidebar-module-->
+	</div>
+  </div><!-- #wrapper -->
+
+  <%= render 'footer' %>
+</body>
+</html>
+
+
