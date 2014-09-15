@@ -24,7 +24,7 @@ There is a way to make your HTTP PUT request “conditional” in the sense that
 <p class="text-warning"><span class="label label-success">Info</span> In order to make the PUT request conditional use HTTP’s If-Match: * or If-None-Match:* headers.</p>
 
 | **Description** | Create a new PID |
-| **URL**         | The GRNET API Service URL  |
+| **URL**         | The API Service URL  |
 | **HTTP Method** | PUT for manual generation of suffix name                       |
 | **HTTP Method** | POST for automatic generation of suffix name                       |
 | **Security**    | Requires ownership of the PID. So you must authenticate before actually creating the PID|

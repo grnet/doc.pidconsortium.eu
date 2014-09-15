@@ -1,5 +1,5 @@
 ---
-title: Glossary | GRNET Handle API
+title: Glossary |  Handle API
 ---
 
 # Glossary
@@ -7,20 +7,11 @@ title: Glossary | GRNET Handle API
 * TOC
 {:toc}
 
-### API data
-
-
-    # GRNET EPIC API URL
-    https://epic.grnet.gr/api/v2/handles/11239/
-
-    # GRNET EPIC API prefix
-    11239
-
 ### Basic terms
 
 Some terms in this document have a very specific meaning:
 
-- **PID**: Persistent identifier. It is the Identifier pointing to a resource with no knowledge of the resource. It is the the combination of the prefix/suffix . The prefix is the GRNET API Prefix 11239. As a suffix we use a dynamically created UUID as shown in the following examples.  
+- **PID**: Persistent identifier. It is the Identifier pointing to a resource with no knowledge of the resource. It is the the combination of the prefix/suffix . The prefix is the  API Prefix 11239. As a suffix we use a dynamically created UUID as shown in the following examples.  
 
 - **handle**: The handle is the PID along with a set of values that accompany the PID
 

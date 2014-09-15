@@ -1,11 +1,11 @@
 ---
-title: GRNET Persistent IDentifier Service
+title: Persistent IDentifier Service
 layout: overview
 ---
 
 <div class="wrapper feature">
 	<h1>Persistent Identifiers</h1>
-	<h2>by GRNET</h2>
+	<h2>by EPIC</h2>
 	<a href="/guides/overview/" class="button">Browse the documentation</a>
 	<div class="handle-pid-logo">
 		<img src="/shared/images/handle-pid.png"  />
@@ -30,10 +30,10 @@ layout: overview
 			<p>Enable the use of persistent identifiers in your application using the EPIC API</p>
 		</li>
 		<li class="highlight-module">
-			<a href="https://docs.google.com/forms/d/1IQL8dtwUW_MrV9ApZJmnjzZRaAAp18JtGTa2wMfcxiM/viewform" target='blank'><span class="big-icon glyphicon-envelope"></span></a>
-			<h2><a href="https://docs.google.com/forms/d/1IQL8dtwUW_MrV9ApZJmnjzZRaAAp18JtGTa2wMfcxiM/viewform" target="blank">Contact</a></h2>
-			<p>Are you interested in using Persistent Identifiers for your data set? Get in touch with us to get you started. Just fill out the 
-			<a href='https://docs.google.com/forms/d/1IQL8dtwUW_MrV9ApZJmnjzZRaAAp18JtGTa2wMfcxiM/viewform' target='blank'>form</a>.</p>
+			<a href="mailto:contact@pid.consortium.eu" target='blank'><span class="big-icon glyphicon-envelope"></span></a>
+			<h2><a href="mailto:contact@pid.consortium.eu" target="blank">Contact</a></h2>
+			<p>Are you interested in using Persistent Identifiers for your data set? Get in touch with us to get you started. Just send us an 
+			<a href='mailto:contact@pid.consortium.eu' target='blank'>email</a>.</p>
 		</li>
 	</ul>
 </div>

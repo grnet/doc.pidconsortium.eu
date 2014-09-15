@@ -13,7 +13,7 @@ This API uses JSON as the primary exchange format. All implementations MUST be a
 You can retrieve the list of pids at once, by just supplying the Service Url with the prefix. 
 
 | **Description** | GET a PID |
-| **URL**         | The GRNET API Service URL  |
+| **URL**         | The  API Service URL  |
 | **HTTP Method** | GET                         |
 | **Security**    | You must authenticate before actually getting all PID. |
 

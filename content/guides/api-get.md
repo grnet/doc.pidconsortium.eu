@@ -13,7 +13,7 @@ This API uses JSON as the primary exchange format. All implementations MUST be a
 Once you have the PID url, then you can retrieve the information at once for this PID, by just supplying its URL. 
 
 | **Description** | GET a PID |
-| **URL**         | The GRNET API Service URL with the suffix |
+| **URL**         | The  API Service URL with the suffix |
 | **HTTP Method** | GET                         |
 | **Security**    | You must authenticate before actually getting PID information. |
 

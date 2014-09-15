@@ -12,10 +12,8 @@ This API uses JSON as the primary exchange format. All implementations MUST be a
 ## Basic Authentication - Description
 The API allows REST clients to authenticate themselves with a user name and password using basic authentication.
 
-If you don’t have an account please contact hdl@grnet.gr
-
 | **Description** | Authenticate to API Service |
-| **URL**         | The GRNET API Service URL   |
+| **URL**         | The API Service URL   |
 | **HTTP Method** | GET                         |
 | **Security**    | Basic Authentication        |
 
