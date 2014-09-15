@@ -7,15 +7,6 @@ title: Glossary |  Handle API
 * TOC
 {:toc}
 
-### API data
-
-
-    #  EPIC API URL
-    https://epic.grnet.gr/api/v2/handles/11239/
-
-    #  EPIC API prefix
-    11239
-
 ### Basic terms
 
 Some terms in this document have a very specific meaning:
