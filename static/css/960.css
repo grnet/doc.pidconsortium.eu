@@ -641,3 +641,65 @@ body {
 .clearfix {
   zoom: 1;
 }
+/* Float Clearing
+--------------------------------------------- */
+
+.archive-pagination:before,
+.clearfix:before,
+.entry:before,
+.entry-pagination:before,
+.post-navigation:before,
+.footer-widgets:before,
+.nav-primary:before,
+.nav-secondary:before,
+.site-container:before,
+.site-footer:before,
+.site-header:before,
+.site-inner:before,
+.wrap:before {
+	content: " ";
+	display: table;
+}
+
+.archive-pagination:after,
+.clearfix:after,
+.entry:after,
+.entry-pagination:after,
+.post-navigation:after,
+.footer-widgets:after,
+.nav-primary:after,
+.nav-secondary:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.site-inner:after,
+.wrap:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+.site-header {
+    background: none repeat scroll 0 0 #f5f5f5;
+}
+.site-header .wrap {
+    padding: 0;
+}
+.wrap {
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+.title-area {
+    font-weight: 700;
+    padding: 16px 0;
+    text-align: center;
+}
+.site-title {
+    font-size: 45px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0 0 8px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
