@@ -1,11 +1,11 @@
 ---
-title: GRNET Persistent IDentifier Service
+title: Persistent IDentifier Service
 layout: overview
 ---
 
 <div class="wrapper feature">
 	<h1>Persistent Identifiers</h1>
-	<h2>by GRNET</h2>
+	<h2>by EPIC</h2>
 	<a href="/guides/overview/" class="button">Browse the documentation</a>
 	<div class="handle-pid-logo">
 		<img src="/shared/images/handle-pid.png"  />

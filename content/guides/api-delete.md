@@ -17,7 +17,7 @@ You may want to delete a defined PID. Once you have the PID url, then you can de
 
 
 | **Description** | Delete a PID |
-| **URL**         | The GRNET API Service URL with the PID   |
+| **URL**         | The  API Service URL with the PID   |
 | **HTTP Method** | DELETE                        |
 | **Security**    | Requires ownership of the PID. So you must authenticate before actually deleting the file        |
 

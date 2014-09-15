@@ -14,7 +14,7 @@ The basic parameters are the same as in CREATE a PID
 You may want to update the values of an existing PID. This action is similar to the Create action. 
 
 | **Description** | Update an existing PID |
-| **URL**         | The GRNET API Service URL with the PID   |
+| **URL**         | The  API Service URL with the PID   |
 | **HTTP Method** | PUT |
 | **Security**    | Requires ownership of the PID. So you must authenticate before actually updating the PID|
 
