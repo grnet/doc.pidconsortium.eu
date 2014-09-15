@@ -254,7 +254,6 @@ a img {
 
 #header {
     margin: 0 auto;
-    max-width: 980px;
     position: relative;
 }
 
@@ -1130,5 +1129,35 @@ padding:10px;
     text-align: center;  
 }
 
+Site Footer
+---------------------------------------------------------------------------------------------------- */
 
+.site-footer {
+	border-top: 1px solid #F5F5F5;
+	color: #666;
+	font-size: 14px;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.site-footer p {
+	margin: 0;
+}
+
+.site-footer a {
+	display: inline-block;
+}
+
+p.copyright {
+	font-size: inherit;
+	float: left;
+}
+
+p.credit {
+	float: right;
+}
+
+a[href] {
+    color: #b5883f!important;
+}
 
