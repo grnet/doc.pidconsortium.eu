@@ -42,17 +42,17 @@ The documentation has the following files and directories:
 
  *  **config.yaml** 
     contains the site configuration
- *  **Rules **
+ *  **Rules**
     contains compilation, routing and layouting rules
- *  **content/ **
+ *  **content/**
     contains the uncompiled items
- *  **layouts/ **
+ *  **layouts/**
     contains the layouts
- *  **lib/ **
+ *  **lib/**
     contains custom site-specific code (filters, helpers, …)
- *  **output/ **
+ *  **output/**
     contains the compiled site
- *  **tmp/ **
+ *  **tmp/**
     contains data used for speeding up compilation (can be safely emptied)
 
 ### Config file 
