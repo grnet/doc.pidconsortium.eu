@@ -9,15 +9,15 @@ Install Ruby and nanoc on the machine you want to view the documentation. For mo
 Installation process
 
 ```bash
-bundle install 
+% bundle install 
 ```
 
 Compile 
 ```bash
-bundle exec nanoc
+% bundle exec nanoc
 ```
 
 View 
 ```bash
-bundle exec nanoc view
+% bundle exec nanoc view
 ```
