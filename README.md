@@ -40,22 +40,29 @@ Once you have created the Gemfile with these contents, use Bundler to ensure tha
 
 The documentation has the following files and directories:
 
- *  **config.yaml** 
-    contains the site configuration
- *  **Rules**
-    contains compilation, routing and layouting rules
  *  **content/**
     contains the uncompiled items
  *  **layouts/**
     contains the layouts
  *  **lib/**
     contains custom site-specific code (filters, helpers, …)
+ *  **static/**
+    contains static files (images, css)
+ *  **Rules**
+    contains compilation, routing and layouting rules
+
+You have to add the config file as described in the next section. 
+
+ *  **config.yaml** 
+    contains the site configuration
+
+These will be created after compilation 
  *  **output/**
     contains the compiled site
  *  **tmp/**
     contains data used for speeding up compilation (can be safely emptied)
 
-### Config file 
+### Config.yaml 
 
 ```bash
 encoding: utf-8
