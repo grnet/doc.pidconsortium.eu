@@ -1,4 +1,3 @@
-Gemfile
 output
 tmp
 .DS_Store
@@ -8,4 +7,4 @@ crash.log
 *~
 *.swp
 *.swo
-config.yaml
+*.lock
