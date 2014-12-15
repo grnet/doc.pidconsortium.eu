@@ -10,7 +10,7 @@ layout: overview
 	<div class="handle-pid-logo">
 		<img src="/shared/images/handle-pid.png"  />
 		<span class="caption simple-caption">  
-		<p>Image from Clarin Project (http://www.clarin.eu)</p>  
+		<p>Image from <a href="http://www.clarin.eu">CLARIN research infrastructure</a></p>  
 		</span> 
 	</div>
 
@@ -30,10 +30,10 @@ layout: overview
 			<p>Enable the use of persistent identifiers in your application using the EPIC API</p>
 		</li>
 		<li class="highlight-module">
-			<a href="mailto:contact@pid.consortium.eu" target='blank'><span class="big-icon glyphicon-envelope"></span></a>
-			<h2><a href="mailto:contact@pid.consortium.eu" target="blank">Contact</a></h2>
+			<a href="mailto:contact@pidconsortium.eu" target='blank'><span class="big-icon glyphicon-envelope"></span></a>
+			<h2><a href="mailto:contact@pidconsortium.eu" target="blank">Contact</a></h2>
 			<p>Are you interested in using Persistent Identifiers for your data set? Get in touch with us to get you started. Just send us an 
-			<a href='mailto:contact@pid.consortium.eu' target='blank'>email</a>.</p>
+			<a href='mailto:contact@pidconsortium.eu' target='blank'>email</a>.</p>
 		</li>
 	</ul>
 </div>
