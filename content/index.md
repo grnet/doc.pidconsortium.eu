@@ -30,10 +30,10 @@ layout: overview
 			<p>Enable the use of persistent identifiers in your application using the EPIC API</p>
 		</li>
 		<li class="highlight-module">
-			<a href="mailto:contact@pid.consortium.eu" target='blank'><span class="big-icon glyphicon-envelope"></span></a>
-			<h2><a href="mailto:contact@pid.consortium.eu" target="blank">Contact</a></h2>
+			<a href="mailto:contact@pidconsortium.eu" target='blank'><span class="big-icon glyphicon-envelope"></span></a>
+			<h2><a href="mailto:contact@pidconsortium.eu" target="blank">Contact</a></h2>
 			<p>Are you interested in using Persistent Identifiers for your data set? Get in touch with us to get you started. Just send us an 
-			<a href='mailto:contact@pid.consortium.eu' target='blank'>email</a>.</p>
+			<a href='mailto:contact@pidconsortium.eu' target='blank'>email</a>.</p>
 		</li>
 	</ul>
 </div>
