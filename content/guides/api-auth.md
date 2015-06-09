@@ -22,7 +22,7 @@ The data you must send in order to authenticate are described in the following t
 
 Type | Description | Required | Default value | Example value |
 ------|-------------|----------|---------------|---------------|
-url to authenticate | a url to authenticate. We use the service PID service URL | Yes | None |  https://epic.grnet.gr/api/v2/handles/ |
+url to authenticate | a url to authenticate. We use the service PID service URL | Yes | None |  ServiceURL|
 username | your username | Yes |None| |
 password | your password | Yes |None| |
 
