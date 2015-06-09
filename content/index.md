@@ -10,7 +10,7 @@ layout: overview
 	<div class="handle-pid-logo">
 		<img src="/shared/images/handle-pid.png"  />
 		<span class="caption simple-caption">  
-		<p>Image from Clarin Project (http://www.clarin.eu)</p>  
+		<p>Image from <a href="http://www.clarin.eu">CLARIN research infrastructure</a></p>  
 		</span> 
 	</div>
 
