@@ -13,7 +13,7 @@ This API uses JSON as the primary exchange format. All implementations MUST be a
 You can search for a PID by using a term. 
 
 | **Description** | Search a PID |
-| **URL**         | The  EPIC API Url+?PARAMETER=\*term\*  |
+| **URL**         | The  ePIC API Url+?PARAMETER=\*term\*  |
 | **HTTP Method** | GET                         |
 | **Security**    | You must authenticate before actually getting this information.|
 

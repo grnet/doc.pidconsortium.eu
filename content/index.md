@@ -5,7 +5,7 @@ layout: overview
 
 <div class="wrapper feature">
 	<h1>Persistent Identifiers</h1>
-	<h2>by EPIC</h2>
+	<h2>by ePIC</h2>
 	<a href="/guides/overview/" class="button">Browse the documentation</a>
 	<div class="handle-pid-logo">
 		<img src="/shared/images/handle-pid.png"  />
@@ -22,12 +22,12 @@ layout: overview
 		<li class="highlight-module">
 			<a href="/guides/overview/"><span class="big-icon glyphicon-book"></span></a>
 			<h2><a href="/guides/overview/">Get Started</a></h2>
-			<p>Get started with the EPIC API. Browse the documentation</p>
+			<p>Get started with the ePIC API. Browse the documentation</p>
 		</li>
 		<li class="highlight-module">
 			<a href="/guides/api/"><span class="big-icon glyphicon-list-alt"></span></a>
 			<h2><a href="/guides/api/">API</a></h2>
-			<p>Enable the use of persistent identifiers in your application using the EPIC API</p>
+			<p>Enable the use of persistent identifiers in your application using the ePIC API</p>
 		</li>
 		<li class="highlight-module">
 			<a href="mailto:contact@pidconsortium.eu" target='blank'><span class="big-icon glyphicon-envelope"></span></a>
