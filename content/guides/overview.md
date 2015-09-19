@@ -1,5 +1,5 @@
 ---
-title: Overview | EPIC API
+title: Overview | ePIC API
 ---
 
 ## Overview
@@ -13,6 +13,6 @@ The API supports the following functions
 - PUT for creating/updating a new PID with manual generation of suffix name 
 - DELETE for deleting a selected PID
 
-PID EPIC is totally (100%) compatible with the DOI and a PID (including the prefix) can also be interpreted from any server DOI. 
+PID ePIC is totally (100%) compatible with the DOI and a PID (including the prefix) can also be interpreted from any server DOI. 
 
 [restful]: https://en.wikipedia.org/wiki/Representational_state_transfer

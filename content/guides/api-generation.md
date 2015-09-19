@@ -7,7 +7,7 @@ result: resultgenerate
 
 # API - PID generation
 
-Every identifier consists of two parts: its prefix , and a unique local name under the prefix known as its suffix
+Every identifier consists of two parts: its prefix and a unique local name under the prefix known as its suffix
 
 <span class="txtcenter"><strong>
 < PREFIX > / < SUFFIX > (e.g. 11239/123456745).
@@ -15,7 +15,8 @@ Every identifier consists of two parts: its prefix , and a unique local name und
 
 Any suffix - local name must be unique under its local namespace. The uniqueness of a prefix and a local name under that prefix ensures that any identifier is globally unique within the context of the System.
 
-There are two ways to generate the SUFFIX a) automatic and b) manual
+
+Depending on the service there are two ways to generate the SUFFIX a) automatic and b) manual
 
 
 ## Automatic generation of SUFFIX
