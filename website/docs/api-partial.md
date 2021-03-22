@@ -1,10 +1,9 @@
 ---
 id: api-partial
-title: Part Identifiers
+title: API - Part Identifiers
 kind: code
 ---
 
-# API - Part Identifiers
 Part identifiers compute an unlimited number of handles on the fly, by registering just one. A single template handle can be created as a base that will allow any number of extensions to that base to be resolved as full handles, according to a pattern, without each such handle being individually registered.  In the handle system the part - fragment identifier is enabled with a template. The template is a syntax that defines a delimiter and an extension (extension is the option to add any kind of string behind the delimiter). 
 
 The template is not actually part of the PID. Syntax of the PIDs as well as the resolution mechanism accept the usage of part - fragment identifiers.
