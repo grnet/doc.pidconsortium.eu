@@ -1,12 +1,10 @@
 ---
 id: api-create
-title: Create a PID
+title: API - Create a new PID
 kind: code
 slug: create
 result: resultcreate
 ---
-
-# API - Create a new PID
 
 This API uses JSON as the primary exchange format. All implementations MUST be able to produce and consume JSON.
 
@@ -26,7 +24,7 @@ There is a way to make your HTTP PUT request “conditional” in the sense that
 In order to make the PUT request conditional use HTTP’s If-Match: * or If-None-Match:* headers.
 :::
 
-|                 |                             |
+| Type            | Description                 |
 | --------------- | --------------------------- |
 | **Description** | Create a new PID |
 | **URL**         | The API Service URL  |
