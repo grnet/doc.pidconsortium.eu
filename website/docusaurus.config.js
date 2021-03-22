@@ -1,3 +1,4 @@
+
 module.exports = {
   title: 'European Persistent Identifier Consortium Documentation',
   tagline: '',
@@ -5,7 +6,7 @@ module.exports = {
 //  baseUrl: '/',
   baseUrl: '/doc.pidconsortium.eu/',
   onBrokenLinks: 'throw',
-  favicon: 'img/grnetfavicon.ico',
+  favicon: 'img/grnet-favicon.png',
   organizationName: 'GRNET', // Usually your GitHub org/user name.
   projectName: 'doc.pidconsortium.eu', // Usually your repo name.
   themeConfig: {
@@ -32,6 +33,11 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'GRNET',
+        src: 'img/grnet-logo.png',
+        href: 'http://www.grnet.gr/',
+      },
       links: [
         {
           title: ' ',
@@ -81,9 +87,7 @@ module.exports = {
           ],
         },
       ],
-//      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-//      copyright: `Copyright © ${new Date().getFullYear()} GRNET`,
-      copyright: `Copyright © ${new Date().getFullYear()} <a href="http://www.pidconsortium.net/">European Persistent Identifier Consortium</a>`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="http://www.grnet.gr/"> GRNET </a> <br/> <a href="/docs/terms-en">Terms of use</a> | <a href="/docs/terms-el">Όροι Χρήσης</a>`,
     },
   },
   presets: [

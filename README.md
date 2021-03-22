@@ -2,125 +2,134 @@ doc.pidconsortium.eu
 ====================
 
 ### Prerequisites
-Install Ruby and nanoc on the machine you want to view the documentation. For more information please visit [Installation Process] (http://nanoc.ws/install/#instructions-for-the-impatient)
+Install **Docusaurus** v2 on the machine you want to edit the documentation. For more information please visit [Installation Process] (https://v2.docusaurus.io/docs/installation)
 
-### Gemfile
-Several features of nanoc rely on optional dependencies. For example, the view option requires the adsf package. This Gemfile specifies the dependencies used for this project:
-
-```bash
-source "http://rubygems.org"
-ruby '2.1.4'
-gem 'builder'
-gem 'coderay'
-gem 'kramdown'
-gem 'mime-types'
-gem 'nanoc'
-gem 'nokogiri'
-gem 'pygments.rb'
-#gem 'rake'
-gem 'thin'
-gem 'yajl-ruby'
-gem 'systemu'
-group :development do
-  gem 'adsf'
-  gem 'fssm'
-end
-```
-
-Once you have created the Gemfile with these contents, use Bundler to ensure that all of these dependencies are installed. Run the standard install command:
-
-```bash
-% bundle install 
-```
-
-###Structure
+### Structure
 
 The documentation has the following files and directories:
-
- *  **content/**
-    contains the uncompiled items
- *  **layouts/**
-    contains the layouts
- *  **lib/**
-    contains custom site-specific code (filters, helpers, …)
- *  **static/**
-    contains static files (images, css)
- *  **Rules**
-    contains compilation, routing and layouting rules
-
-You have to add the config file as described in the next section. 
-
- *  **config.yaml** 
-    contains the site configuration
-
-These will be created after compilation 
- *  **output/**
-    contains the compiled site
- *  **tmp/**
-    contains data used for speeding up compilation (can be safely emptied)
-
-### Config.yaml 
-
 ```bash
-encoding: utf-8
-# A list of file extensions that nanoc will consider to be textual rather than
-# binary. If an item with an extension not in this list is found,  the file
-# will be considered as binary.
-text_extensions: [ 'css', 'erb', 'haml', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'php', 'rb', 'sass', 'scss', 'txt', 'xhtml', 'xml', 'atom' ]
-
-# The path to the directory where all generated files will be written to. This
-# can be an absolute path starting with a slash, but it can also be path
-# relative to the site directory.
-output_dir: output
-
-# A list of index filenames, i.e. names of files that will be served by a web
-# server when a directory is requested. Usually, index files are named
-# “index.hml”, but depending on the web server, this may be something else,
-# such as “default.htm”. This list is used by nanoc to generate pretty URLs.
-index_filenames: [ 'index.html' ]
-
-# Whether or not to generate a diff of the compiled content when compiling a
-# site. The diff will contain the differences between the compiled content
-# before and after the last site compilation.
-enable_output_diff: false
-
-# The data sources where nanoc loads its data from. This is an array of
-# hashes; each array element represents a single data source. By default,
-# there is only a single data source that reads data from the “content/” and
-# “layout/” directories in the site directory.
-data_sources:
-  -
-    # The type is the identifier of the data source. By default, this will be
-    # `filesystem_unified`.
-    type: filesystem_unified
-
-    # The path where items should be mounted (comparable to mount points in
-    # Unix-like systems). This is “/” by default, meaning that items will have
-    # “/” prefixed to their identifiers. If the items root were “/en/”
-    # instead, an item at content/about.html would have an identifier of
-    # “/en/about/” instead of just “/about/”.
-    items_root: /
-
-    # The path where layouts should be mounted. The layouts root behaves the
-    # same as the items root, but applies to layouts rather than items.
-    layouts_root: /
-
-  -
-    type: static
-    items_root: /static
-
+.
+├── website
+│   ├── docs
+│   │   ├── examples
+│   │   │   ├── authcurl.md
+│   │   │   ├── authphp.md
+│   │   │   ├── authpython.md
+│   │   │   ├── authres.md
+│   │   │   ├── createcurl.md
+│   │   │   ├── createperl.md
+│   │   │   ├── createphp.md
+│   │   │   ├── createpython.md
+│   │   │   ├── createres.md
+│   │   │   ├── deletecurl.md
+│   │   │   ├── deleteperl.md
+│   │   │   ├── deletephp.md
+│   │   │   ├── deletepython.md
+│   │   │   ├── deleteres.md
+│   │   │   ├── generatecurl.md
+│   │   │   ├── generateperl.md
+│   │   │   ├── generatephp.md
+│   │   │   ├── generatepython.md
+│   │   │   ├── generateres.md
+│   │   │   ├── getcurl.md
+│   │   │   ├── getperl.md
+│   │   │   ├── getphp.md
+│   │   │   ├── getpython.md
+│   │   │   ├── getres.md
+│   │   │   ├── listcurl.md
+│   │   │   ├── listperl.md
+│   │   │   ├── listphp.md
+│   │   │   ├── listpython.md
+│   │   │   ├── listres.md
+│   │   │   ├── searchcurl.md
+│   │   │   ├── searchperl.md
+│   │   │   ├── searchphp.md
+│   │   │   ├── searchpython.md
+│   │   │   └── searchres.md
+│   │   ├── api-auth.md
+│   │   ├── api-calls.md
+│   │   ├── api-create.md
+│   │   ├── api-delete.md
+│   │   ├── api-generation.md
+│   │   ├── api-get.md
+│   │   ├── api-list.md
+│   │   ├── api.md
+│   │   ├── api-partial.md
+│   │   ├── api-search.md
+│   │   ├── api-update.md
+│   │   ├── cross-origin.md
+│   │   ├── glossary.md
+│   │   ├── handle.md
+│   │   ├── methods.md
+│   │   ├── overview.md
+│   │   ├── requests.md
+│   │   ├── responses.md
+│   │   ├── terms_el.md
+│   │   ├── terms_en.md
+│   │   └── test.md
+│   ├── src
+│   │   ├── css
+│   │   │   └── custom.css
+│   │   └── pages
+│   │       ├── index.js
+│   │       └── styles.module.css
+│   ├── static
+│   │   └── img
+│   │       ├── ePIClogo.png
+│   │       ├── favicon.ico
+│   │       ├── grnet-favicon.png
+│   │       ├── grnet-logo.png
+│   │       ├── logo.svg
+│   │       ├── undraw_docusaurus_mountain.svg
+│   │       ├── undraw_docusaurus_react.svg
+│   │       └── undraw_docusaurus_tree.svg
+│   ├── babel.config.js
+│   ├── docusaurus.config.js
+│   ├── package.json
+│   ├── README.md
+│   ├── sidebars.js
+│   └── yarn.lock
+├── Jenkinsfile
+└── README.md
 ```
+
+
+ *  `docs/`
+    Contains the Markdown files for the docs. Customize the order of the docs sidebar in `sidebars.js`. More details can be found in the [docs guide](https://v2.docusaurus.io/docs/docs-markdown-features)
+ *  `src/`
+    Non-documentation files like pages or custom React components. You don't have to strictly put your non-documentation files in here but putting them under a centralized directory makes it easier to specify in case you need to do some sort of linting/processing
+ * * Any files within this directory will be converted into a website page. More details can be found in the [pages guide](https://v2.docusaurus.io/docs/creating-pages)
+ *  `static/`
+    Static directory. Any contents inside here will be copied into the root of the final `build` directory
+ *  `/docusaurus.config.js` A config file containing the site configuration.
+ *  `/package.json` A Docusaurus website is a React app. You can install and use any npm packages you like in them
+ *  `/sidebar.js` Used by the documentation to specify the order of documents in the sidebar
+
+
+These will be created after compilation
+ *  **/build**
+    contains the compiled site
+ *  **.docusaurus/**
+    contains data used for the compilation of docusaurus v2
+
+
+### website/docusaurus.config.js
+
+Contains configurations for your site and is placed in the root directory of your site.
+You can find a detailed description of all parameters on the [official Docusaurus v2 page](https://v2.docusaurus.io/docs/docusaurus.config.js/).
 
 ### Commands
 
 
-Compile 
+Compile
 ```bash
-% nanoc
+npm run build
 ```
 
-View 
+View
 ```bash
-% nanoc view
+npm run serve
 ```
-[More Information about nanoc commands] (http://nanoc.ws/docs/basics/)
+
+* [More Information about docusaurus v2 commands](https://v2.docusaurus.io/docs/installation#build)
+
