@@ -1,19 +1,17 @@
 ---
 id: api-auth
-title: Authenticate
+title: API - Basic Authentication 
 kind: code
 slug: auth
 result: resultauth
 ---
-
-# API - Basic Authentication 
 
 This API uses JSON as the primary exchange format. All implementations MUST be able to produce and consume JSON.
 
 ## Basic Authentication - Description
 The API allows REST clients to authenticate themselves with a user name and password using basic authentication.
 
-|                 |                             |
+| Type            | Description                 |
 | --------------- | --------------------------- |
 | **Description** | Authenticate to API Service |
 | **URL**         | The API Service URL         |
