@@ -8,3 +8,10 @@ crash.log
 *.swp
 *.swo
 *.lock
+
+# Docusaurus 2
+website/.docusaurus/
+website/node_modules/
+website/blog/
+website/build/
+
