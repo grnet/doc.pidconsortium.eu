@@ -1,12 +1,10 @@
 ---
 id: api-generation
-title: PID generation
+title: API - PID generation
 kind: code
 slug: generate
 result: resultgenerate
 ---
-
-# API - PID generation
 
 Every identifier consists of two parts: its prefix and a unique local name under the prefix known as its suffix
 
