@@ -1,12 +1,10 @@
 ---
 id: api-delete
-title: Delete a PID
+title: API - Delete a PID
 kind: code
 slug: delete
 result: resultdelete
 ---
-
-# API - Delete a PID
 
 This API uses JSON as the primary exchange format. All implementations MUST be able to produce and consume JSON.
 
@@ -16,8 +14,7 @@ You may want to delete a defined PID. Once you have the PID url, then you can de
 
 **At the moment a nodelete profile is enforced. So the deletion of handles is deactivated.**
 
-
-|                 |                             |
+| Type            | Description                 |
 | --------------- | --------------------------- |
 | **Description** | Delete a PID |
 | **URL**         | The  API Service URL with the PID   |

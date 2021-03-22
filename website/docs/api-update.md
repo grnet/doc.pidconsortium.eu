@@ -1,10 +1,8 @@
 ---
 id: api-update
-title: Update a PID
+title: API - Update an existing PID
 kind: code
 ---
-
-# API - Update an existing PID
 
 You may want to update the values of an existing PID. This action is similar to the Create action. 
 
@@ -14,7 +12,7 @@ The basic parameters are the same as in CREATE a PID
 
 You may want to update the values of an existing PID. This action is similar to the Create action. 
 
-|                 |                             |
+| Type            | Description                 |
 | --------------- | --------------------------- |
 | **Description** | Update an existing PID |
 | **URL**         | The  API Service URL with the PID   |
