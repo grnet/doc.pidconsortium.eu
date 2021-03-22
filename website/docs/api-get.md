@@ -1,19 +1,17 @@
 ---
 id: api-get
-title: Get a PID
+title: API - GET a PID
 kind: code
 slug: get
 result: resultget
 ---
-
-# API - GET a PID
 
 This API uses JSON as the primary exchange format. All implementations MUST be able to produce and consume JSON.
 
 ## GET a PID - Description
 Once you have the PID url, then you can retrieve the information at once for this PID, by just supplying its URL. 
 
-|                 |                             |
+| Type            | Description                 |
 | --------------- | --------------------------- |
 | **Description** | GET a PID |
 | **URL**         | The  API Service URL with the suffix |
