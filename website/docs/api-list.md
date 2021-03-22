@@ -1,17 +1,19 @@
 ---
 id: api-list
-title: API - List PID
+title: List PID
 kind: code
 slug: list
 result: resultlist
 ---
+
+# API - List PID
 
 This API uses JSON as the primary exchange format. All implementations MUST be able to produce and consume JSON.
 
 ## List PID - Description
 You can retrieve the list of pids at once, by just supplying the Service Url with the prefix. 
 
-| Type            | Description                 |
+|                 |                             |
 | --------------- | --------------------------- |
 | **Description** | GET a PID |
 | **URL**         | The  API Service URL  |
