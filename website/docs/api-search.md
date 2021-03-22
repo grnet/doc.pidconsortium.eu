@@ -1,19 +1,17 @@
 ---
 id: api-search
-title: Search a PID
+title: API - Search a PID
 kind: code
 slug: search
 result: resultsearch
 ---
-
-# API - Search a PID
 
 This API uses JSON as the primary exchange format. All implementations MUST be able to produce and consume JSON.
 
 ## Search a PID - Description
 You can search for a PID by using a term. 
 
-|                 |                             |
+| Type            | Description                 |
 | --------------- | --------------------------- |
 | **Description** | Search a PID |
 | **URL**         | The  ePIC API Url+?PARAMETER=\*term\*  |
