@@ -7,7 +7,7 @@ order: 2
 The request in python
 
 <pre><code class="language-python">
-import urllib.request, urllib.error, urllib.parse
+import urllib2
 
 PIDSERVICE_URL="THE_SERVICE_URL_WITH_PREFIX"
 PIDSERVICE_USER="YOURUSERNAME"
@@ -17,37 +17,37 @@ URL_TO_OPEN=PIDSERVICE_URL+HANDLENAME
 DATAURL=""
 
 # create a password manager
-password_mgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
+password_mgr = urllib2.HTTPPasswordMgrWithDefaultRealm()
 
 # Add the username and password.
 password_mgr.add_password(None, PIDSERVICE_URL, PIDSERVICE_USER, PIDSERVICE_PASSWD)
 
-handler = urllib.request.HTTPBasicAuthHandler(password_mgr)
+handler = urllib2.HTTPBasicAuthHandler(password_mgr)
 
 # create "opener" (OpenerDirector instance)
-opener = urllib.request.build_opener(handler)
+opener = urllib2.build_opener(handler)
 
 # use the opener to fetch a URL
 opener.open(URL_TO_OPEN)
 
 # Install the opener.
 # Now all calls to urllib2.urlopen use our opener.
-urllib.request.install_opener(opener)
+urllib2.install_opener(opener)
 
 #http://stackoverflow.com/questions/2407126/python-urllib2-basic-auth-problem
-REQUESTDATA = urllib.request.Request(URL_TO_OPEN)
+REQUESTDATA = urllib2.Request(URL_TO_OPEN)
 # creates the delete method
 REQUESTDATA.get_method = lambda: 'DELETE'
 
 try:
-        DATAURL = urllib.request.urlopen(REQUESTDATA)
-except urllib.error.URLError as e:
+        DATAURL = urllib2.urlopen(REQUESTDATA)
+except urllib2.URLError, e:
         if e.code == 404:
-                print("404-Not found")
+                print "404-Not found"
         if e.code == 401:
-                print("401-Authentication failed")
+                print "401-Authentication failed"
         if e.code == 403:
-                print("403-Not permitted")
+                print "403-Not permitted"
 
 </code></pre>
 
