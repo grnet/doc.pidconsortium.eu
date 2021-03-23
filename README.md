@@ -2,7 +2,7 @@ doc.pidconsortium.eu
 ====================
 
 ### Prerequisites
-Install **Docusaurus** v2 on the machine you want to edit the documentation. For more information please visit [Installation Process] (https://v2.docusaurus.io/docs/installation)
+Install **Docusaurus** v2 on the machine you want to edit the documentation. For more information please visit [Installation Process](https://v2.docusaurus.io/docs/installation)
 
 ### Structure
 
