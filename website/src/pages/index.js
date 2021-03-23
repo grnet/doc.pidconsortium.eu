@@ -8,31 +8,30 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Get Started',
+    imageUrl: 'img/undraw_annotation.svg',
     description: (
       <>
-        This is a service dedicated to provide, resolve and mint persistent identifiers (PID).
-        This document describes the Handle RESTful web service, using the HTTP/1.1 application protocol.
-      </>
-    ),
-  },
-  {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        Glossary &amp; Data model
-        We describe the glossary used as well as the data model.
+        Get started with the ePIC API.
+        Browse the documentation
       </>
     ),
   },
   {
     title: 'API',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/undraw_code_typing.svg',
     description: (
       <>
-        Describes the handling of the RESTful web service, using the HTTP application protocol.
+        Enable the use of persistent identifiers in your application using the ePIC API
+      </>
+    ),
+  },
+  {
+    title: 'Contact',
+    imageUrl: 'img/undraw_contact_us.svg',
+    description: (
+      <>
+        Are you interested in using Persistent Identifiers for your data set? Get in touch with us to get you started. Just fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0UqSzLQfOJvk0qtXWNibL4WKUiDaNKy6POTmGhxXcNrlSzw/viewform"> form </a>.
       </>
     ),
   },
