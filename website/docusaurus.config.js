@@ -2,9 +2,9 @@
 module.exports = {
   title: 'European Persistent Identifier Consortium Documentation',
   tagline: '',
-  url: 'https://grnet.github.io',
-//  baseUrl: '/',
-  baseUrl: '/doc.pidconsortium.eu/',
+  url: 'https://epic.grnet.gr',
+  baseUrl: '/',
+//  baseUrl: '/doc.pidconsortium.eu/',
   onBrokenLinks: 'throw',
   favicon: 'img/grnet-favicon.png',
   organizationName: 'GRNET', // Usually your GitHub org/user name.

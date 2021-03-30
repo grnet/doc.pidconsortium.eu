@@ -43,7 +43,7 @@ pipeline {
                     sh '''
                         cd $WORKSPACE/$PROJECT_DIR/website
                         ssh -o "StrictHostKeyChecking no" root@epic.grnet.gr rm -rf /var/www/epic.grnet.gr/*
-                        scp -o "StrictHostKeyChecking no" -r ../assets build/* root@epic.grnet.gr:/var/www/epic.grnet.gr/
+                        scp -o "StrictHostKeyChecking no" -r  build/* root@epic.grnet.gr:/var/www/epic.grnet.gr/
                     '''
                 }
 
