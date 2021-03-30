@@ -28,6 +28,7 @@ pipeline {
                     cd website
                     npm install
                 '''
+
                 sshagent (credentials: ['jenkins-master']) {
                     sh '''
                         cd $WORKSPACE/$PROJECT_DIR/website
@@ -37,6 +38,15 @@ pipeline {
                         GIT_USER=${GH_USER} USE_SSH=true npm run deploy
                     '''
                 }
+
+                sshagent (credentials: ['newgrnetci-doc.pidconsortium.eu']) {
+                    sh '''
+                        cd $WORKSPACE/$PROJECT_DIR/website
+                        ssh -o "StrictHostKeyChecking no" root@epic.grnet.gr rm -rf /var/www/epic.grnet.gr/*
+                        scp -o "StrictHostKeyChecking no" -r ../assets build/* root@epic.grnet.gr:/var/www/epic.grnet.gr/
+                    '''
+                }
+
             }
         }
     }
