@@ -42,8 +42,8 @@ pipeline {
                 sshagent (credentials: ['newgrnetci-doc.pidconsortium.eu']) {
                     sh '''
                         cd $WORKSPACE/$PROJECT_DIR/website
-                        ssh -o "StrictHostKeyChecking no" root@epic.grnet.gr rm -rf /var/www/epic.grnet.gr/*
-                        scp -o "StrictHostKeyChecking no" -r  build/* root@epic.grnet.gr:/var/www/epic.grnet.gr/
+                        ssh -o "StrictHostKeyChecking no" root@doc.pidconsortium.eu rm -rf /var/www/doc.pidconsortium.eu/*
+                        scp -o "StrictHostKeyChecking no" -r  build/* root@doc.pidconsortium.eu:/var/www/doc.pidconsortium.eu/
                     '''
                 }
 

@@ -2,7 +2,7 @@
 module.exports = {
   title: 'European Persistent Identifier Consortium Documentation',
   tagline: '',
-  url: 'https://epic.grnet.gr',
+  url: 'https://doc.pidconsortium.eu',
   baseUrl: '/',
 //  baseUrl: '/doc.pidconsortium.eu/',
   onBrokenLinks: 'throw',
@@ -33,11 +33,11 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      logo: {
-        alt: 'GRNET',
-        src: 'img/grnet-logo.png',
-        href: 'http://www.grnet.gr/',
-      },
+      //logo: {
+      //  alt: 'GRNET',
+      //  src: 'img/grnet-logo.png',
+      //  href: 'http://www.grnet.gr/',
+      //},
       links: [
         {
           title: ' ',
@@ -87,7 +87,8 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} <a href="http://www.grnet.gr/"> GRNET </a> <br/> <a href="/docs/terms-en">Terms of use</a> | <a href="/docs/terms-el">Όροι Χρήσης</a>`,
+      //copyright: `Copyright © ${new Date().getFullYear()} <a href="http://www.grnet.gr/"> GRNET </a> <br/> <a href="/docs/terms-en">Terms of use</a> | <a href="/docs/terms-el">Όροι Χρήσης</a>`,
+      copyright: `Copyright © 2021 Persistent Identifiers for eResearch`,
     },
   },
   presets: [

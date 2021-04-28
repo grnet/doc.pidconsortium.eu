@@ -31,7 +31,7 @@ const features = [
     imageUrl: 'img/undraw_contact_us.svg',
     description: (
       <>
-        Are you interested in using Persistent Identifiers for your data set? Get in touch with us to get you started. Just fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0UqSzLQfOJvk0qtXWNibL4WKUiDaNKy6POTmGhxXcNrlSzw/viewform"> form </a>.
+        Are you interested in using Persistent Identifiers for your data set? Get in touch with us to get you started. Just send an email support [at] pidconsortium.net
       </>
     ),
   },
