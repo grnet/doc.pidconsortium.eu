@@ -49,7 +49,7 @@ parsed_data | A set of data that describes the resource identified by the handle
 timestamp | The timestamp records the last time this Handle Value was updated at the server. The field contains elapsed time since 00:00:00 UTC, January 1970 in milliseconds. | NO | timestamp | 2013-11-26T11:58:14Z
 ttl_type | the TTL type indicates whether the TTL value is absolute or relative.  The absolute TTL value defines the time to live in terms of seconds since 00:00:00 UTC, January 1st 1970.  A relative TTL specifies the time to live in terms of the number of seconds elapsed since the value was obtained by the client from any handle server. | NO | integer 0=relative, 1=absolute by default 0 | 0 |
 ttl | a number that specifies the Time-To- Live of the value record. A positive value defines the time to live in terms of seconds since 00:00:00 UTC, January 1st 1970. A negative value specifies the time to live in terms of the number of seconds elapsed since the value was obtained. (if ttl_type is absolute, then this indicates the date/time of expiration in seconds since Jan 1 0:00:00 1970.) | NO | integer seconds | 86400 |
-refs | a list of references to other Handle Values | No | None | [{'idx':'1','handle':'11239/12'}] where idx is the value for index field of handle data, and handle is the referenced handle value
+refs | a list of references to other Handle Values | No | None | [`{'idx':'1','handle':'11239/12'}`] where idx is the value for index field of handle data, and handle is the referenced handle value
 
 ## Example
 
