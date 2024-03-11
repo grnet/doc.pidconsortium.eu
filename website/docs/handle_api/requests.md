@@ -9,8 +9,8 @@ sidebar_position: 3
 All request entities are JSON.
 
 Generally supported URI query parameters:
-* **callback={callback}**
-Allows the use of JSONP. The response entity will be wrapped in {callback}(...).
+* **callback=\{callback\}**
+Allows the use of JSONP. The response entity will be wrapped in `{callback}(...)`.
 * **pretty=[true|false]**
 If true responses are pretty-printed. Default false.
 

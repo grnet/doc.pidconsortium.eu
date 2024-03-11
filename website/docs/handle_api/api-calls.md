@@ -10,7 +10,7 @@ The primary resource in this api is the handle record for a handle:
 ```
 /api/handles/{handle}
 ```
-The handle record for handle {handle}.
+The handle record for handle `{handle}`.
 
 ```
 /api/handles/{handle}?index={index}
@@ -23,7 +23,7 @@ Another resource is the collection of handles:
 ```
 /api/handles?prefix={prefix}
 ```
-The list of handles available at this server under prefix {prefix}.
+The list of handles available at this server under prefix `{prefix}`.
 
 Another resource is the collection of homed prefixes:
 
