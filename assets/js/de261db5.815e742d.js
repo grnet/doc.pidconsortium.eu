@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[426],{9980:e=>{e.exports=JSON.parse('{"title":"EPIC API","slug":"/category/epic-api","permalink":"/docs/category/epic-api","navigation":{"next":{"title":"Overview","permalink":"/docs/"}}}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[625],{8345:s=>{s.exports=JSON.parse('{"title":"Glossary","slug":"/category/glossary","permalink":"/docs/category/glossary","navigation":{"previous":{"title":"Methods","permalink":"/docs/handle_api/methods"},"next":{"title":"Glossary |  Handle API","permalink":"/docs/glossary/"}}}')}}]);
