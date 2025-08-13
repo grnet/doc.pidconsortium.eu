@@ -5,7 +5,7 @@ slug: api-calls
 sidebar_position: 2
 ---
 
-The primary resource in this api is the handle record for a handle:
+The primary resource in this api is the handle record for a specific handle:
 
 ```
 /api/handles/{handle}
